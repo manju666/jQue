@@ -1,0 +1,16 @@
+label{
+    width:140px;
+    float:left;
+}
+.star{
+    color:red;
+}
+label.error{
+    float:none;
+    color:red;
+    padding-left:20px;
+}
+.required{
+    width:200px;
+
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script>
+        $(function(){
+            $("#btn").click(function(){
+             $("#content").html("<h2>jquery</h2>");
+               });
+
+
+             $("p").hover(function(){
+        $(this).css("background-color",'green');
+        // this specifies the current paragraph.
+    });
+
+
+    $("p").mouseleave(function(){
+        $(this).css("background-color",'yellow');
+    });
+
+
+    var font_size=15;
+    $("#plus").click(function(){
+        $("p").css("font-size",++font_size+"px");
+    });
+    
+    $("#minus").click(function(){
+        $("p").css("font-size",--font_size+"px");
+    });
+    
+
+      });
+    
+        
+    
+    </script>
+    <title>Jquery demo</title>
+    </head>
+    <body>
+        <button id="btn">touch me</button>
+        <button id="plus"> +</button>
+        <button id="minus">-</button>
+        <div id="content"></div>
+        <p>JOY joy joy joy JOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy </p>
+        <p>JOY joy joy joy JOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy </p>
+        <p>JOY joy joy joy JOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy joy joyJOY joy </p>
+    </body>
+
+</html>
